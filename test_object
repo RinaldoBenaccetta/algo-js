@@ -1,0 +1,22 @@
+// let firstObject = {
+//     '01' : 'test',
+//     '02' : 'truc'
+// }
+
+// let copyObject = firstObject;
+
+// console.log(copyObject);
+
+// firstObject['02'] = 'machin';
+
+// console.log(copyObject);
+
+let myArray = ['test', 'truc'];
+
+console.log(myArray);
+
+let copyArray = myArray;
+
+myArray.push('chose');
+
+console.log(copyArray);

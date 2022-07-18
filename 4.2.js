@@ -26,7 +26,3 @@ function rand10() {
 }
 
 console.log(rand10());
-
-export default function Hello() {
-    return rand10;
-}

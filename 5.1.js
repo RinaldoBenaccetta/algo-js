@@ -54,11 +54,11 @@ const askTvSerie = () => {
     let prodYear = prompt("What's the production year of this show?");
     let cast = askCastMembers();
 
-    return {
+    return JSON.stringify({
         'name' : name,
         'productionYear' : prodYear,
         'cast' : cast
-    };
+    });
 }
 
 let test = askTvSerie();
