@@ -52,15 +52,13 @@ const createRectangles = (quantity) => {
 const collideAll = () => {
     let rectangleArray = createRectangles(1000);
     let rectangleArrayLength = rectangleArray.length - 1;
-    //console.log(rectangleArray[2]);
 
     rectangleArray.forEach((currentRectangle, elementIndex) => {
         let i = 0;
 
         while (i <= rectangleArrayLength) {
 
-            // Don't compare to itself
-            if (elementIndex !== i) {
+            if (elementIndex !== i) {// Don't compare to itself
                 console.log(currentRectangle.collides(rectangleArray[i]));
             }
 
